@@ -31,6 +31,16 @@
 # EPICS_BASE should appear last so earlier modules can override stuff:
 EPICS_BASE = /home/epics_services/1.1.0/ubuntu-22.04/7.0.7/base
 ETHER_IP = /home/epics_services/1.1.0/ubuntu-22.04/7.0.7/modules/ether_ip
+RECCASTER = /home/epics_services/1.1.0/ubuntu-22.04/7.0.7/modules/recsync
+IOCSTATS = /home/epics_services/1.1.0/ubuntu-22.04/7.0.7/modules/iocStats
+AUTOSAVE = /home/epics_services/1.1.0/ubuntu-22.04/7.0.7/modules/autosave
+CAPUTLOG = /home/epics_services/1.1.0/ubuntu-22.04/7.0.7/modules/caPutLog
+
+#Access security file location
+ASCF=/epics/iocs/ascf
+
+#Save/Restore file location
+SAVE=/epics/iocs/autosave
 
 # Set RULES here if you want to use build rules from somewhere
 # other than EPICS_BASE:

@@ -9,6 +9,18 @@ include $(TOP)/configure/CONFIG
 #DB += xxx.db
 
 DB += plc_ipr.db
+ifneq ($(IOCSTATS),)
+DB_INSTALLS += $(IOCSTATS)/db/iocAdminSoft.db
+endif
+
+ifneq ($(RECCASTER),)
+DB_INSTALLS += $(RECCASTER)/db/reccaster.db
+endif
+
+ifneq ($(AUTOSAVE),)
+DB_INSTALLS += $(AUTOSAVE)/db/save_restoreStatus.db
+endif
+
 
 #----------------------------------------------------
 # If <anyname>.db template is not named <anyname>*.template add
